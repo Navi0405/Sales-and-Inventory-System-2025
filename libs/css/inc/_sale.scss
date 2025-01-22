@@ -1,0 +1,169 @@
+.sale{
+    &__filters{
+        padding: 0 5px;
+        border:2px solid $main-gray;
+        display: flex;
+        margin-bottom: 20px;
+
+        &__group{
+            display: flex;
+            align-items: center;
+            flex:1;
+            &.hidden{
+                display: none;
+            }
+        }
+
+
+        &__left{
+            padding: 10px 0;
+            flex: 1;
+            display: flex;
+            margin-right: 20px;
+            align-items: center;
+
+            label{
+                padding: 0 15px;
+            }
+        }
+
+        
+        
+
+        &__select{
+            padding: 5px 10px;
+            flex:1;
+            border:none;
+            // border:1px solid $main;
+            &:active{
+                border:1px solid $main;
+            }
+
+            &:focus{
+                border:1px solid $main;
+            }
+            &:focus-visible{
+                outline: none;
+            }
+        }
+
+        &__right{
+            padding: 10px 0;
+            padding-left: 20px;
+            flex:2;
+            display: flex;
+            border-left: 2px solid $main-gray;
+            align-items: center;
+
+            input{
+                border:1px solid $main-gray;
+                padding: 5px 10px;
+                &:focus-visible{
+                    outline: none;
+                    border:1px solid $main;
+                  
+                }
+
+                &.error{
+                    border: 1px solid red;
+                }
+            }
+        }
+
+        &__monthly{
+            &__input{
+                flex:1;
+            }
+            &__button{
+                flex:1;
+                margin-left: 20px;
+                background-color: $main-light-2;
+                border:2px solid $main-dark;
+                padding: 3px;
+                color: $main-dark;
+                font-weight: 700;
+            }
+            &__label{
+                padding: 0 5px;
+            }
+        }
+
+        &__daily{
+            
+
+            &__input{
+                flex:1;
+            }
+
+            &__button{
+                flex:1;
+                margin-left: 20px;
+                background-color: $main-light-2;
+                border:2px solid $main-dark;
+                padding: 3px;
+                color: $main-dark;
+                font-weight: 700;
+            }
+
+            &__label{
+                padding: 0 5px;
+            }
+        }
+
+        &__range{
+            
+
+            &__input{
+                flex:1;
+            }
+
+            &__button{
+                flex:1;
+                margin-left: 20px;
+                background-color: $main-light-2;
+                border:2px solid $main-dark;
+                padding: 3px;
+                color: $main-dark;
+                font-weight: 700;
+            }
+
+            &__label{
+                padding: 0 10px;
+            }
+        }
+    }
+
+    &__table{
+        button {
+            outline: none;
+            padding: 5px 5px;
+            margin-right: 5px;
+            flex-grow: 1;
+            background-color: $main-light-2;
+            border:1px solid $main-dark;
+            color: $main-dark;
+            width: 100%;
+
+            &:hover{
+                border:1px solid $main-dark;
+            }
+        }
+    }
+
+    &__modal{
+        &__void{
+            outline: none;
+            padding: 5px 5px;
+            margin-right: 5px;
+            flex-grow: 1;
+            background-color: $main-light-2;
+            border:1px solid $main-dark;
+            color: $main-dark;
+            width: 100%;
+
+            &:hover{
+                border:1px solid $main-dark;
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+table{
+    thead{
+        color:$white;
+        background-color: $main-dark;
+        border:1px solid $main-light;
+        
+        tr{
+            border:1px solid $main-light;
+        }
+    }
+
+    tbody{
+        tr{
+            td{
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+
+.table-grid{
+    margin-top: 5vh;
+    tr{
+        .homebox{
+            padding:1rem;
+            width: 30vw;
+            height: 30vh;
+        }
+    }
+
+    .dateholder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 3rem;
+        }
+        h3{
+            font-size: 1rem;
+        }
+    }
+
+    .tableholder{
+        // border: 1px solid black;
+        // border-radius: 25px;
+        background-color: $white;
+        padding: 1rem;
+    }
+
+    .box-wrapper{
+        border-radius: 25px;
+        // background-color: $main-light;
+        // color:$white;
+        color:$main;
+        background-color: $white;
+        padding:2rem;
+        height: 100%;
+        width: 100%;
+        border:1px solid gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--res{
+        max-width: 100vw;
+        max-height: 75vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'dt dt dt p s'
+        'dt dt dt r r';
+        grid-gap: 1.5rem;
+        //bootstrap large
+        @media (max-width:992px) {
+            grid-template-areas: 
+            'dt'
+            'p'
+            's'
+            'r';
+            grid-gap: 1rem;
+        }
+
+        .box{
+            &--date-time{
+                grid-area: dt;
+            }
+
+            &--product{
+                grid-area: p;
+            }
+
+            &--sales{
+                grid-area: s;
+            }
+
+            &--report{
+                grid-area: r;
+            }
+        }
+    }
+
+    &#home_canvas{
+        border:5px solid red;
+    }
+}
+
+#graph{
+    position: relative;
+    height: 100%;
+    width: 100% !important;
+  }
+  
+  canvas {
+    width: 100% !important;
+  }

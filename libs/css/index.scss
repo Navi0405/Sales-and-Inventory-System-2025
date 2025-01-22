@@ -1,0 +1,53 @@
+@import './inc/globals';
+@import './inc/login';
+@import './inc/table';
+@import './inc/pos';
+@import './inc/invoice';
+@import './inc/sale';
+body {
+    background-color: #f5f5f5;
+}
+
+.btn {
+    color: white;
+    &:hover {
+        color: black;
+    }
+}
+
+$blue: #2dafa9;
+.navbar {
+    background-color: #05a2af;
+    background-color: $blue;
+}
+
+.dropdown-menu {
+    background-color: $blue;
+}
+
+.nav-item {
+    a {
+        color: white;
+    }
+}
+
+.c-bg-blue {
+    background-color: $blue;
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.user {
+    // background-color:red;
+    &__table-wrapper {
+        padding: 1rem;
+    }
+    &__form-wrapper {
+        padding: 1rem;
+    }
+}
+
+.table-wrapper {
+    overflow-x: scroll;
+}
